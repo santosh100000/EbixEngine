@@ -1,31 +1,3 @@
-// import { Contractor } from "../models/Contractor.js";
-
-// const updateContractor = async (req, res) => {
-//   const { ConID } = req.params;
-//   const updatedDetails = req.body;
-
-//   console.log("update contractor go here");
-
-//   try {
-//     const updatedContractor = await Contractor.findOneAndUpdate(
-//       { ConID }, // Find by ConID directly
-//       updatedDetails,
-//       { new: true }
-//     );
-
-//     if (!updatedContractor) {
-//       return res.status(404).json({ message: "Contractor not found" });
-//     }
-
-//     res.status(200).json(updatedContractor);
-//   } catch (error) {
-//     console.error("Error updating contractor:", error.message);
-//     res.status(500).json({ message: "Internal Server Error" });
-//   }
-// };
-
-// export default updateContractor;
-
 import { Contractor } from "../models/Contractor.js";
 
 const updateContractor = async (req, res) => {
